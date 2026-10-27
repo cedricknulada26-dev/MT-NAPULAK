@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mt. Napulak - Explore Iloilo</title>
+    <style>
+        /* CSS Styling - This makes the website look good */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* --- HEADER & NAVIGATION (From your whiteboard) --- */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* --- MAIN CONTENT (Body) --- */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Image Styling */
+        .main-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* About/Profile Section */
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h2 {
+            color: #1abc9c;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+
+        .profile-img {
+            flex: 1;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Gallery Section */
+        .gallery-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- FOOTER (From your whiteboard) --- */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .profile-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="header-content">
+            <h1>MT. NAPULAK</h1>
+            <nav>
+                <ul>
+                    <!-- These links match the navigation from your whiteboard -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN BODY SECTION -->
+    <main>
+        
+        <!-- HOME Section -->
+        <section id="home" class="hero">
+            <h2>Welcome to Mt. Napulak</h2>
+            <p>Discover the breathtaking views of the "Dog's Peak" in Igbaras, Iloilo.</p>
+            <!-- Main Image of the mountain -->
+            <img src="https://i.ytimg.com/vi/dJh6rC_4kk8/maxresdefault.jpg" alt="Beautiful mountain landscape" class="main-image">
+        </section>
+
+        <!-- PROFILE Section -->
+        <section id="profile" class="profile-section">
+            <div class="profile-text">
+                <h2>Mountain Profile</h2>
+                <p><strong>Location:</strong> Igbaras, Iloilo, Philippines</p>
+                <p><strong>Elevation:</strong> 1,239 meters above sea level (MASL)</p>
+                <p><strong>Difficulty:</strong> Minor Climb (3/9)</p>
+                <p>Mt. Napulak is famous for its distinct rock formation at the summit that resembles a dog's head. It offers a 360-degree view of the surrounding islands and mountain ranges in Panay.</p>
+            </div>
+            <!-- Image for Profile -->
+            <img src="https://tse1.mm.bing.net/th/id/OIP.nmDBK6aCi8rGeOVB2XbpLAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hiker looking at the mountain" class="profile-img">
+        </section>
+
+        <!-- GALLERY Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Multiple images to mimic a gallery -->
+                <img src="https://i.ytimg.com/vi/0kBziQYbeHQ/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGDggTyhyMA8=&rs=AOn4CLAro9CIXZCad0_8UwvCs9Mun1QtkQ" alt="Mountain peaks">
+                <img src="https://ilonggotraveler.com/wp-content/uploads/2025/05/wp-17469441985886958542817927489225.jpg" alt="Hiking trail">
+                <img src="https://i.pinimg.com/736x/d7/d0/9c/d7d09c4f26f8312c5f29f9767abbb84d.jpg" alt="Camping at night">
+                <img src="https://3.bp.blogspot.com/-IH-xPpU4X_c/TwGaZyxq2UI/AAAAAAAAAxM/jKK1KemZ0xQ/s640/166438_1585880330532_1341486411_31491678_7920427_n.jpg" alt="Sunrise on the mountain">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2024 Mt. Napulak Website Project. All rights reserved.</p>
+        <p>Created for cedrick nulada</p>
+    </footer>
+
+</body>
+</html>
